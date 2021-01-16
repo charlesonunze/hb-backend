@@ -1,12 +1,11 @@
 import { components } from './components';
-import { getAllTodos } from './todos';
 
 const swaggerDocs = {
 	openapi: '3.0.0',
 	info: {
 		version: '1.0.0',
-		title: 'CBT REST API',
-		description: 'Official documentation for CBT REST API.'
+		title: 'HACKERBAY BACKEND TEST',
+		description: 'Official documentation for HACKERBAY BACKEND TEST.'
 	},
 	schemes: [],
 	servers: [
@@ -16,9 +15,7 @@ const swaggerDocs = {
 		}
 	],
 
-	paths: {
-		'/todos': getAllTodos
-	},
+	paths: {},
 
 	components: components
 };

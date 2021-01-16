@@ -8,14 +8,3 @@ export interface ResponseParams {
 }
 
 export type anyObject = Record<string, unknown>;
-
-export interface Todo {
-	title: string;
-	completed?: boolean;
-	created?: Date;
-}
-
-export interface QueryParams {
-	pageNo?: string;
-	pageSize?: string;
-}
