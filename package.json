@@ -1,6 +1,6 @@
 {
-	"name": "node-api-starter",
-	"version": "1.0.2",
+	"name": "hb-backend",
+	"version": "1.0.0",
 	"main": "app.js",
 	"scripts": {
 		"tsc": "tsc",

@@ -1,15 +1,27 @@
-# Node API Starter
+# Backend challenge for HackerBay
 
-### Scripts
+My mission, should I choose to accept it, is to build simple stateless microservice in Nodejs, with three major functionalities - Authentication, JSON patching and Image Thumbnail Generation.
 
-#### `npm run dev`
+## Installation
 
-Starts the application in development using `nodemon` and `ts-node` to do hot reloading.
+To have this project running locally on your computer, first navigate to a directory and run the commands below:
 
-#### `npm run build`
+`git clone https://github.com/charlesonunze/hb-backend.git`
 
-Builds the app at `build`, cleaning the folder first.
+`npm install`
 
-#### `npm run start`
+## Set up your environment
 
-Starts the app in production by first building the project with `npm run build`, and then executing the compiled JavaScript at `build/index.js`.
+Create a .env file and copy the contents in the .env.example file to it. Replace it with your own values.
+
+## Starting the Server
+
+In development run `npm run dev` on the terminal.
+
+In production run `npm start` on the terminal.
+
+## Running Tests
+
+To run the tests, run `npm test` on the terminal.
+
+To get the test coverage, run `npm run coverage` on the terminal.
