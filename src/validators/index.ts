@@ -31,3 +31,11 @@ export const validateJsonInput = (data: anyObject) => {
 
 	return schema.validate(data);
 };
+
+export const validateQueryParams = (data: anyObject) => {
+	const schema = Joi.object({
+		url: Joi.string().required()
+	});
+
+	return schema.validate(data);
+};
