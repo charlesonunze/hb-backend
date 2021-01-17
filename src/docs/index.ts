@@ -1,6 +1,7 @@
 import { components } from './components';
 
 import { loginDocs } from './auth';
+import { jsonPatchDocs } from './jsonPatch';
 
 const swaggerDocs = {
 	openapi: '3.0.0',
@@ -18,7 +19,8 @@ const swaggerDocs = {
 	],
 
 	paths: {
-		'/login': loginDocs
+		'/login': loginDocs,
+		'/patch-json': jsonPatchDocs
 	},
 
 	components: components
