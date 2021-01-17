@@ -16,3 +16,18 @@ export const validateLoginInput = (data: anyObject) => {
 
 	return schema.validate(data);
 };
+
+export const validateJsonInput = (data: anyObject) => {
+	const jsonPatchSchema = Joi.object({
+		op: Joi.string().required(),
+		path: Joi.string().required(),
+		value: Joi.string().required()
+	});
+
+	const schema = Joi.object({
+		originalDocument: Joi.object().required(),
+		patchDocument: Joi.array().items(jsonPatchSchema)
+	});
+
+	return schema.validate(data);
+};
