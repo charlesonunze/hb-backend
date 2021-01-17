@@ -14,11 +14,15 @@ To have this project running locally on your computer, first navigate to a direc
 
 Create a .env file and copy the contents in the .env.example file to it. Replace it with your own values.
 
-## Starting the Server
+## Running the application
 
-In development run `npm run dev` on the terminal.
+In development mode, run `npm run watch` on the terminal and `npm run dev` on another terminal window to start the app and watch for changes.
 
 In production run `npm start` on the terminal.
+
+OR run the dockerized version of this app by running:
+
+`docker run -p 7777:5001 --env PORT=5001 --env JWT_PRIVATE_KEY=0P3N_5353M3 charlesonunze/hb`
 
 ## Running Tests
 

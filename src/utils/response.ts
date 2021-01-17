@@ -12,3 +12,11 @@ export const sendResponse = ({
 		data
 	});
 };
+
+export const sendFile = ({
+	res,
+	filePath,
+	statusCode = 201
+}: ResponseParams) => {
+	res.status(statusCode).sendFile(filePath!);
+};
