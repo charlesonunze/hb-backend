@@ -15,8 +15,10 @@ class ThumbnailController {
 		if (error) return handleValidationError(error);
 
 		const { url } = value;
-
-		const folder = resolve('./src', 'images');
+		const folder = resolve(
+			'./src',
+			process.env.NODE_ENV === 'test' ? 'images-test' : 'images'
+		);
 		const fileName = cryptoRandomString({ length: 5 });
 		const downloadFilePath = resolve(folder, fileName + '.jpg');
 		const thumbnailFilePath = resolve(folder, fileName + '-thumbnail.jpg');
