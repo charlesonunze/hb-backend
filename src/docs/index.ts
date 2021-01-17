@@ -1,5 +1,7 @@
 import { components } from './components';
 
+import { loginDocs } from './auth';
+
 const swaggerDocs = {
 	openapi: '3.0.0',
 	info: {
@@ -10,12 +12,14 @@ const swaggerDocs = {
 	schemes: [],
 	servers: [
 		{
-			url: '/api',
+			url: '/api/v1',
 			description: 'Development Server'
 		}
 	],
 
-	paths: {},
+	paths: {
+		'/login': loginDocs
+	},
 
 	components: components
 };
